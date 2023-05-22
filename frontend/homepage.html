@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="./homepage.css">
+<head>
+    <title>Sim Login Interface</title>
+</head>
+<body>
+    <h1>Sim Login Interface</h1>
+    <div id="content">
+        <form>
+            <div class="form-group">
+              <label for="user-iccid">User ICCID:</label>
+              <input id="user-iccid" class="input" type="text" placeholder="Input your ICCID">
+            </div>
+            <div class="form-group">
+              <label for="user-imsi">User IMSI:</label>
+              <input id="user-imsi" class="input" type="text" placeholder="Input your IMSI">
+            </div>
+            <div class="form-group">
+              <label for="user-lai">User LAI:</label>
+              <input id="user-lai" class="input" type="text" placeholder="Input your LAI">
+            </div>
+            <div class="form-group">
+              <label for="user-k">User K:</label>
+              <input id="user-k" class="input" type="text" placeholder="Input your K">
+            </div>
+            <div class="form-group">
+              <label for="user-oen">User OEN:</label>
+              <input id="user-oen" class="input" type="text" placeholder="Input your OEN">
+            </div>
+          </form>
+        <div id="button-container">
+            <button id="user-login-button" class="button-default">Login</button>
+            <button id="fetch-users" class="button-default">List Users</button>
+        </div>
+        <table id="users-table">
+            <caption id="table-caption" style="display: none;">Logged-in Sim Users</caption>
+        </table>
+    </div>
+    <script src="./homepage.js" defer></script>
+</body>
+</html>
